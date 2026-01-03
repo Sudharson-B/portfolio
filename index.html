@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sudharson Balamurugan - Python Full Stack Developer Portfolio">
+    <meta name="author" content="Sudharson Balamurugan">
+    <title>Sudharson Balamurugan | Python Full Stack Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style></style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand" onclick="scrollToSection('home')">
+                    <span class="brand-text">Sudhar</span>
+                    <span class="brand-emoji">🌞</span>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+
+                <div class="navbar-links desktop-only">
+                    <a onclick="scrollToSection('home')" class="nav-link" data-section="home">Home</a>
+                    <a onclick="scrollToSection('about')" class="nav-link" data-section="about">About</a>
+                    <a onclick="scrollToSection('education')" class="nav-link" data-section="education">Education</a>
+                    <a onclick="scrollToSection('skills')" class="nav-link" data-section="skills">Skills</a>
+                    <a onclick="scrollToSection('internships')" class="nav-link"
+                        data-section="internships">Internships</a>
+                    <a onclick="scrollToSection('projects')" class="nav-link" data-section="projects">Projects</a>
+                    <a onclick="scrollToSection('certificates')" class="nav-link"
+                        data-section="certificates">Certificates</a>
+                    <a onclick="scrollToSection('contact')" class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <div class="navbar-social desktop-only">
+                    <a href="https://linkedin.com/in/sudharsonb1309" target="_blank" rel="noopener noreferrer"
+                        class="social-icon">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Sudharson-B" target="_blank" rel="noopener noreferrer"
+                        class="social-icon">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a onclick="scrollToSection('home')" class="mobile-nav-link" data-section="home">Home</a>
+            <a onclick="scrollToSection('about')" class="mobile-nav-link" data-section="about">About</a>
+            <a onclick="scrollToSection('education')" class="mobile-nav-link" data-section="education">Education</a>
+            <a onclick="scrollToSection('skills')" class="mobile-nav-link" data-section="skills">Skills</a>
+            <a onclick="scrollToSection('internships')" class="mobile-nav-link"
+                data-section="internships">Internships</a>
+            <a onclick="scrollToSection('projects')" class="mobile-nav-link" data-section="projects">Projects</a>
+            <a onclick="scrollToSection('certificates')" class="mobile-nav-link"
+                data-section="certificates">Certificates</a>
+            <a onclick="scrollToSection('contact')" class="mobile-nav-link" data-section="contact">Contact</a>
+            <div class="mobile-social">
+                <a href="https://linkedin.com/in/sudharsonb1309" target="_blank" rel="noopener noreferrer"
+                    class="social-icon">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://github.com/Sudharson-B" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i data-lucide="code-2"></i>
+                        <span>Full Stack Developer</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Sudharson Balamurugan</span>
+                    </h1>
+
+                    <div class="hero-role">
+                        <i data-lucide="rocket" class="role-icon"></i>
+                        <h2>Python Full Stack Developer</h2>
+                    </div>
+
+                    <p class="hero-description">
+                        Specializing in designing and deploying high-performance RESTful web applications
+                        using Django, Django REST Framework, React, and PostgreSQL. Strong expertise in
+                        backend development, REST API design, JWT-based authentication, and AWS cloud services.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">REST APIs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('projects')">
+                            <i data-lucide="rocket"></i>
+                            View Projects
+                        </button>
+                        <a href="./assets/Sudharson__Balamurugan..pdf" class="btn-secondary">
+                            <i data-lucide="download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-circle">
+                            <img src="./assets/sudhar.jpeg" alt="Sudharson Balamurugan" class="hero-profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate <strong>Python Full Stack Developer</strong> with hands-on experience
+                        in designing and deploying high-performance web applications. My expertise spans across
+                        backend development with Django and Django REST Framework, frontend development with React.js,
+                        and cloud infrastructure management with AWS.
+                    </p>
+                    <p class="about-description">
+                        Throughout my internships at <strong>QSpiders</strong>, <strong>Novitech</strong>, and
+                        <strong> TCS iON</strong>, I've developed <strong>5+ production-ready applications</strong>,
+                        designed <strong>25+ reusable React components</strong>, and implemented secure authentication
+                        systems using JWT.
+                    </p>
+                    <p class="about-description">
+                        I thrive in <strong>Agile environments</strong>, excel at problem-solving, and am committed
+                        to writing clean, maintainable code. My goal is to build scalable, user-centric applications
+                        that solve real-world problems.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Academic Journey</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="education-timeline">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="education-header">
+                            <div>
+                                <h3 class="education-degree">B.E. in Electronics and Communication Engineering</h3>
+                                <p class="education-institution">Government College of Engineering, Salem</p>
+                            </div>
+                            <div class="education-badge">
+                                <span class="grade-badge">CGPA: 7.98 / 10</span>
+                            </div>
+                        </div>
+
+                        <div class="education-footer">
+                            <span class="education-duration">2021 – 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="education-header">
+                            <div>
+                                <h3 class="education-degree">Higher Secondary Certificate (HSC)</h3>
+                                <p class="education-institution">Agnes Matric Higher Secondary School, Paramakudi</p>
+                            </div>
+                            <div class="education-badge">
+                                <span class="grade-badge">85%</span>
+                            </div>
+                        </div>
+
+                        <div class="education-footer">
+                            <span class="education-duration">2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="education-header">
+                            <div>
+                                <h3 class="education-degree">Secondary School Leaving Certificate (SSLC)</h3>
+                                <p class="education-institution">Lions Matric Higher Secondary School, Paramakudi</p>
+                            </div>
+                            <div class="education-badge">
+                                <span class="grade-badge">81%</span>
+                            </div>
+                        </div>
+
+                        <div class="education-footer">
+                            <span class="education-duration">2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="skill-category-title">Languages</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <h3 class="skill-category-title">Backend & Frameworks</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Django REST Framework</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">ORM</span>
+                        <span class="skill-tag">MVC/MVT</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h3 class="skill-category-title">Frontend & Libraries</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Redux Toolkit</span>
+                        <span class="skill-tag">React Query</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3 class="skill-category-title">Databases</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Query Optimization</span>
+                        <span class="skill-tag">Indexing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <h3 class="skill-category-title">Cloud & Tools</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (EC2, IAM, VPC, RDS, S3)</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3 class="skill-category-title">Core Concepts</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Async/Await</span>
+                        <span class="skill-tag">Promises</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Professional Experience</span>
+                <h2 class="section-title">Internships</h2>
+            </div>
+
+            <div class="internships-container">
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-icon" style="background-color: rgba(13, 110, 253, 0.1); color: #0d6efd;">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+
+                        <div class="internship-title-area">
+                            <h3 class="company-name">QSpiders</h3>
+                            <p class="role-title">Python Full Stack Development</p>
+                            <div class="internship-meta">
+                                <span class="duration">
+                                    <i data-lucide="calendar"></i>
+                                    Mar 2025 – Present
+                                </span>
+                                <span class="location">Bengaluru, Karnataka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="internship-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Developed 5+ production-ready full-stack web applications using Python, Django, Flask,
+                                and React</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Designed and implemented 15+ secure RESTful APIs with Django ORM and authentication
+                                modules</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Utilized Git/GitHub for version control and collaborative development in Agile
+                                environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-icon" style="background-color: rgba(102, 16, 242, 0.1); color: #6610f2;">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+
+                        <div class="internship-title-area">
+                            <h3 class="company-name">Novitech</h3>
+                            <p class="role-title">Full Stack Developer Intern</p>
+                            <div class="internship-meta">
+                                <span class="duration">
+                                    <i data-lucide="calendar"></i>
+                                    Mar 2025 – Apr 2025
+                                </span>
+                                <span class="location">Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="internship-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Built full-stack applications (Django/React/PostgreSQL) serving 200+ users</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Created 25+ reusable React components and integrated REST APIs</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Optimized data fetching for improved performance using React Query</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-icon" style="background-color: rgba(214, 51, 132, 0.1); color: #d63384;">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+
+                        <div class="internship-title-area">
+                            <h3 class="company-name">Skill Upgrade</h3>
+                            <p class="role-title">Python Developer Intern</p>
+                            <div class="internship-meta">
+                                <span class="duration">
+                                    <i data-lucide="calendar"></i>
+                                    Apr 2024 – Apr 2024
+                                </span>
+                                <span class="location">Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="internship-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Solved 50+ advanced Python programming problems covering OOP and data
+                                structures</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Used NumPy and Matplotlib for data analysis on datasets with 10,000+ data
+                                points</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Implemented efficient algorithms for complex problem-solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <div class="company-icon" style="background-color: rgba(253, 126, 20, 0.1); color: #fd7e14;">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+
+                        <div class="internship-title-area">
+                            <h3 class="company-name">TCS iON</h3>
+                            <p class="role-title">Machine Learning Intern</p>
+                            <div class="internship-meta">
+                                <span class="duration">
+                                    <i data-lucide="calendar"></i>
+                                    Mar 2023 – Mar 2024
+                                </span>
+                                <span class="location">Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="internship-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Developed ML models focusing on data preprocessing and feature engineering</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Analyzed datasets with 50,000+ records for actionable insights</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="chevron-right" class="highlight-icon"></i>
+                            <span>Implemented complete ML workflows from data collection to model evaluation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-carousel">
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+
+                <div class="projects-slider" id="projectsSlider">
+                    <!-- Projects will be injected by JavaScript -->
+                </div>
+
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots">
+                <!-- Dots will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Achievements</span>
+                <h2 class="section-title">Certifications & Training</h2>
+            </div>
+
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/ML.png" target="_blank">
+                                <img src="./assets/ML.png" class="certificate-img">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Machine Learning</h3>
+                        <p class="certificate-issuer">TCS iON</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/Qspiders.jpeg" target="_blank">
+                                <img src="./assets/Qspiders.jpeg" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Python Full Stack</h3>
+                        <p class="certificate-issuer">QSpiders</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/novitech.png" target="_blank">
+                                <img src="./assets/novitech.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Full Stack</h3>
+                        <p class="certificate-issuer">Novitech</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/sql udemy.png" target="_blank">
+                                <img src="./assets/sql udemy.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">SQL to Oracle</h3>
+                        <p class="certificate-issuer">Udemy</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/django .png" target="_blank">
+                                <img src="./assets/django .png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Django Framework</h3>
+                        <p class="certificate-issuer">Simplilearn</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/skillupgrade.png" target="_blank">
+                                <img src="./assets/skillupgrade.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Python Development</h3>
+                        <p class="certificate-issuer">Skill Upgrade</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/ml2.jpeg" target="_blank">
+                                <img src="./assets/ml2.jpeg" class="certificate-img">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Machine Learning</h3>
+                        <p class="certificate-issuer">TCS iON</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/react.png" target="_blank">
+                                <img src="./assets/react.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">React Development</h3>
+                        <p class="certificate-issuer">Scaler</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/frontend.png" target="_blank">
+                                <img src="./assets/frontend.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Frontend Development</h3>
+                        <p class="certificate-issuer">Udemy</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/javascript code easy.jpg" target="_blank">
+                                <img src="./assets/javascript code easy.jpg" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">JavaScript</h3>
+                        <p class="certificate-issuer">Code Easy</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/software_engineerinf.png" target="_blank">
+                                <img src="./assets/software_engineerinf.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Software Engineering</h3>
+                        <p class="certificate-issuer">IBM</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/network.png" target="_blank">
+                                <img src="./assets/network.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Network Essentials</h3>
+                        <p class="certificate-issuer">Cisco</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/sqlw.png" target="_blank">
+                                <img src="./assets/sqlw.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">SQL</h3>
+                        <p class="certificate-issuer">WsCube Tech</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/AI for everyone.png" target="_blank">
+                                <img src="./assets/AI for everyone.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">AI for Everyone</h3>
+                        <p class="certificate-issuer">Guvi</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/python_libraries.png" target="_blank">
+                                <img src="./assets/python_libraries.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Python Libraries</h3>
+                        <p class="certificate-issuer">LetsUpgrade</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <a href="./assets/infosys.png" target="_blank">
+                                <img src="./assets/infosys.png" class="certificate-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Python</h3>
+                        <p class="certificate-issuer"> Infosys</p>
+                    </div>
+
+                    <div class="certificate-overlay">
+                        <span>Click to view</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info-area">
+                    <div class="contact-intro">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm currently looking for new opportunities and my inbox is always open.
+                            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:sudharson13pmk@gmail.com"
+                                    class="contact-value">sudharson13pmk@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919345296923" class="contact-value">+91-9345296923</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Bengaluru, Karnataka</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://linkedin.com/in/sudharsonb1309" class="contact-value" target="_blank"
+                                    rel="noopener noreferrer">sudharsonb1309</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/Sudharson-B" class="contact-value" target="_blank"
+                                    rel="noopener noreferrer">Sudharson-B</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-area">
+                    <form class="contact-form" action="https://formspree.io/f/xqeaqvyg" method="POST">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Sudharson" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="sudharson13@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." rows="5"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sudhar 🌞</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#skills">Skills</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Projects</h4>
+                        <a href="#projects">All Projects</a>
+                        <a href="#certificates">Certificates</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/Sudharson-B" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/sudharsonb1309" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:sudharson13pmk@gmail.com">
+                            <i data-lucide="mail"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Sudharson Balamurugan. Made with <i data-lucide="heart"
+                        class="heart-icon"></i> and passion
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/Sudharson-B" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sudharsonb1309" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
